@@ -1,0 +1,25 @@
+
+    choice = int(input("Enter your choice: "))
+
+    if choice == 1:
+        song = input("Enter song name: ")
+        playlist.add_song(song)
+
+    elif choice == 2:
+        pos = int(input("Enter position: "))
+        song = input("Enter song name: ")
+        playlist.insert_song(pos, song)
+
+    elif choice == 3:
+        song = input("Enter song name to delete: ")
+        playlist.delete_song(song)
+
+    elif choice == 4:
+        playlist.display()
+
+    elif choice == 5:
+        print("Exiting program...")
+        break
+
+    else:
+        print("Invalid choice")
